@@ -1,0 +1,38 @@
+﻿<Controls:MetroWindow x:Class="WpfApp1.TimerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="Manual"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="{DynamicResource WindowBackground}"          
+        Title="" 
+        Height="141.956" Width="399.065">
+    <Window.Resources>
+        <SolidColorBrush x:Key="WindowBackground" 
+                        Color="White"
+                        Opacity="0.9"/>
+    </Window.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="116*"/>
+        </Grid.RowDefinitions>
+        <tb:TaskbarIcon x:Name="myNotifyIcon"
+                    Visibility="Visible"
+                    ToolTipText="Fallback ToolTip for Windows xp"
+                    MenuActivation="LeftOrRightClick"
+                    PopupActivation="DoubleClick"
+
+      />
+        <Button x:Name="_btnCancel" Content="Close" Click="_btnCancel_Click" Grid.Row="1" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="52"/>
+        <Button x:Name="_btnStop" Content="Stop" Click="_btnStop_Click" Grid.Row="1" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="52" Margin="0,0,57,0"/>
+        <Label x:Name="_lblTimer" Foreground="#FF000000" FontSize="36" Content="Label" Margin="10,10,10,30" FontFamily="Algerian" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+
+    </Grid>
+</Controls:MetroWindow>
