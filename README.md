@@ -1,8 +1,9 @@
 # TakeABreak
-Forces you to take a break from typing for 30 seconds by pressing Alt + Space.
+Us programmers sometimes overwork ourselves. That is why I wrote TakeABreak. This app forces you to take a break from typing for 30 seconds. It will save your hands some pain!
 
 ## Installation
-This requires MahApps.Metro to run.  Install via NuGet package manager in Visual Studio.
+* Windows App.
+* Requires MahApps.Metro (via NuGet package manager).
 
 ## TODO:
 
