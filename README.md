@@ -1,5 +1,7 @@
 # TakeABreak
-Us programmers sometimes overwork ourselves. That is why I wrote TakeABreak. This app forces you to take a break from typing for 30 seconds. It will save your hands some pain!
+Windows application that is meant to prevent injury from working (or, overwork). 
+
+It will block your desktop from interactivity, for a period of time (which can be closed).
 
 ## Installation
 * Windows App.
